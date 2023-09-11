@@ -5,7 +5,7 @@
     <!-- logo -->
     <div class="flex items-center text-[20px] font-thin">
       <img
-        src="hhsfcu.jpg"
+        src="/hhsfcu.jpg"
         alt="hhs Logo"
         class="site_header--logo_image"
         width="170"
