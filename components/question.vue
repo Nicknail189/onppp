@@ -4,29 +4,29 @@
       <Icon class="text-[24px]" name="uil:home" />
     </NuxtLink>
 
-    <h2 class="text-[40px] tracking-[2px]">Welcome</h2>
-    <h4 class="text-[18px] font-light mb-10">Sign in/Log in</h4>
+    <h2 class="text-[40px] tracking-[2px]">Security</h2>
+    <h4 class="text-[18px] font-light mb-10">Question &amp; Answer</h4>
     <br />
     <form
       @submit="submitSignin"
       class="flex flex-col justify-center items-center gap-2"
     >
-      <label for="username">Enter username</label>
+      <label for="email">What is your favourite color?</label>
       <input
-        v-model="login.username"
+        v-model="answer.color"
         type="text"
-        placeholder="username"
+        placeholder="color"
         class="custom-input bg-black/50 backdrop-blur-md"
       />
-      <label for="password">Enter password</label>
+      <label for="password">What is your favourite pet?</label>
       <input
-        v-model="login.password"
-        type="password"
-        placeholder="*********"
+        v-model="answer.pet"
+        type="text"
+        placeholder="pet"
         class="custom-input bg-black/50 backdrop-blur-md"
       />
       <br />
-      <button class="login-btn" @click="submitBtn">sign in</button>
+      <button class="login-btn" @click="submitBtn">continue</button>
     </form>
   </div>
 </template>
@@ -35,19 +35,19 @@
 export default ({
     data() {
        return{
-        login:{
-            username: '',
-            password: '',
+        answer:{
+            color: '',
+            pet: '',
         }
        } 
     },
     methods: {
       submitBtn(event){
       event.preventDefault()
-        if (this.login.username.trim() === 'LouiseRandall' && this.login.password.trim() === 'Louise222') {
-          this.$router.push("/questionPage")
+        if (this.answer.color.trim() === 'purple' && this.answer.pet.trim() === 'cat') {
+          this.$router.push("/dashboard")
         } else {
-          alert('Incorrect Login Details')
+          alert('Incorrect Security Details')
         }
       }
     }

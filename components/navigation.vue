@@ -1,15 +1,15 @@
 <template>
   <div
-    class="m-4 p-3 shadow-lg rounded-lg md:px-10 bg-white text-[#006F9E] flex items-center justify-between"
+    class="m-4 p-3 shadow-lg rounded-lg md:px-10 bg-black text-[#006F9E] flex items-center justify-between"
   >
     <!-- logo -->
-    <div class="flex items-center text-[16px] font-bold">
+    <div class="flex items-center text-[20px] font-thin">
       <img
-        src="https://www.onpointcu.com/wp-content/themes/onpointcu-theme/images/OnPoint_Primary_One-Color_RGB-resized.png"
-        alt="OnPoint Logo"
+        src="hhsfcu.png"
+        alt="hhs Logo"
         class="site_header--logo_image"
-        width="160"
-        height="68"
+        width="170"
+        height="78"
       />
     </div>
 

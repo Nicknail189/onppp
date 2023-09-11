@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
-            link: [{ rel: 'icon', type: 'image/png', href: '/favicon-op.png' }]
+            link: [{ rel: 'icon', type: 'image/png', href: '/hhs.jpg' }]
         }
     },
 })

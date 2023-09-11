@@ -1,23 +1,23 @@
 <template>
   <div class="flex flex-col justify-center items-center h-screen">
-    <NuxtLink to="/" class="rounded-full p-3 bg-white/20 hover:bg-white/50">
+    <NuxtLink to="/transferPage" class="rounded-full p-3 bg-white/20 hover:bg-white/50">
       <Icon class="text-[24px]" name="uil:home" />
     </NuxtLink>
 
-    <h2 class="text-[40px] tracking-[2px]">Welcome</h2>
-    <h4 class="text-[18px] font-light mb-10">Sign in/Log in</h4>
+    <h2 class="text-[40px] tracking-[2px]">Transfer</h2>
+    <h4 class="text-[18px] font-light mb-10">Confirm Transaction</h4>
     <br />
     <form
       @submit="submitSignin"
       class="flex flex-col justify-center items-center gap-2"
     >
-      <label for="username">Enter username</label>
+      <!-- <label for="username">Enter username</label>
       <input
         v-model="login.username"
         type="text"
         placeholder="username"
         class="custom-input bg-black/50 backdrop-blur-md"
-      />
+      /> -->
       <label for="password">Enter password</label>
       <input
         v-model="login.password"
@@ -26,7 +26,7 @@
         class="custom-input bg-black/50 backdrop-blur-md"
       />
       <br />
-      <button class="login-btn" @click="submitBtn">sign in</button>
+      <button class="login-btn" @click="submitBtn">Confirm</button>
     </form>
   </div>
 </template>
@@ -36,7 +36,6 @@ export default ({
     data() {
        return{
         login:{
-            username: '',
             password: '',
         }
        } 
@@ -44,10 +43,10 @@ export default ({
     methods: {
       submitBtn(event){
       event.preventDefault()
-        if (this.login.username.trim() === 'LouiseRandall' && this.login.password.trim() === 'Louise222') {
-          this.$router.push("/questionPage")
+        if (this.login.password.trim() === 'Louise222') {
+          this.$router.push("/dashboard")
         } else {
-          alert('Incorrect Login Details')
+          alert('Enter a correct password')
         }
       }
     }
