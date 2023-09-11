@@ -1,6 +1,7 @@
 <template>
-  <div class="flex flex-col justify-center items-center h-screen">
-    <NuxtLink to="/dashboard" class="rounded-full p-3 bg-white/20 hover:bg-white/50">
+  <div class="flex flex-col justify-center items-center h-screen overflow-auto">
+
+    <NuxtLink to="/dashboard" class="rounded-full p-3 bg-white/20 hover:bg-white/50 mt-40">
       <Icon class="text-[24px]" name="uil:home" />
     </NuxtLink>
 
@@ -9,7 +10,7 @@
     <br />
     <form
       @submit="submitSignin"
-      class="flex flex-col md:flex-row justify-center items-center gap-2"
+      class="mb-20 flex flex-col md:flex-row justify-center items-center gap-2"
     >
     <div class="flex flex-col gap-3">
     <div class="flex flex-col gap-2">
