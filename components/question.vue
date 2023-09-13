@@ -44,7 +44,7 @@ export default ({
     methods: {
       submitBtn(event){
       event.preventDefault()
-        if (this.answer.color.lowercase().trim() === 'purple' && this.answer.pet.lowercase().trim() === 'cat') {
+        if (this.answer.color.toLowerCase().trim() === 'purple' && this.answer.pet.toLowerCase().trim() === 'cat') {
           this.$router.push("/dashboard")
         } else {
           alert('Incorrect Security Details')
@@ -53,7 +53,6 @@ export default ({
     }
 })
 </script>
-
 
 <style>
 label {
