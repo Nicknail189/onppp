@@ -1,8 +1,12 @@
 <template>
-  <div class="flex flex-col justify-center items-center h-screen">
+  <div class="flex flex-col justify-center items-center h-auto py-10">
     <NuxtLink to="/" class="rounded-full p-3 bg-white/20 hover:bg-white/50">
       <Icon class="text-[24px]" name="uil:home" />
     </NuxtLink>
+
+    <div class="w-[240px] my-4 rounded-md overflow-hidden">
+      <img src="/hhsfcu.jpg" alt="">
+    </div>
 
     <h2 class="text-[40px] tracking-[2px]">Welcome</h2>
     <h4 class="text-[18px] font-light mb-10">Sign in/Log in</h4>
